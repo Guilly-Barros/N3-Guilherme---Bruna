@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+body.dark {
+  background: #34373e;
+}
+
+
+            /* Estilo básico para a navbar */
+            .navbar {
+                background-color: #524f58;
+                padding: 1rem;
+            }
+            .navbar-brand {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+            .navbar-toggler {
+                background-color: #fff;
+                border: none;
+                cursor: pointer;
+                font-size: 1.5rem;
+            }
+            .navbar-collapse {
+                display: none;
+                flex-direction: column;
+                background-color: #524f58;
+            }
+            .navbar-collapse.show {
+                display: flex;
+            }
+            .navbar-nav {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .nav-item {
+                margin: 0.5rem 0;
+                display: grid;
+                text-align: center;
+                display: inline-block;
+                justify-content: space-between; 
+
+
+            }
+            .nav-link {
+                color: #fff;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+            }
+            .nav-link:hover {
+                background-color: #495057;
+                border-radius: 5px;
+            }
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+
+}
+
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+h1, h2{
+  color: #f1c40f;
+}
